@@ -15,9 +15,9 @@ const Crud = () => {
     };
 
     const handleEdit = (id) => {
-        const user = users.find(user => user.id === id);
-        const newName = prompt('Edit Name', user.name);
-        const newAge = prompt('Edit Age', user.age);
+        
+        const newName = prompt('Edit Name');
+        const newAge = prompt('Edit Age');
 
         setUsers(users.map(user =>
             user.id === id ? { ...user, name: newName, age: newAge } : user
@@ -47,6 +47,7 @@ const Crud = () => {
                     </li>
                 ))}
             </ul>
+            
         </div>
     );
 };
