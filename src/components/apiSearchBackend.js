@@ -5,17 +5,14 @@
 
 // class UserController extends Controller
 // {
-//     public function search(Request $request)
+//     // Method to search users by exact name match
+//     public function searchByName(Request $request)
 //     {
 //         $query = $request->input('query');
-        
-//         $users = User::where('name', 'like', "%{$query}%")->get();
-
+//         $users = User::where('name', $query)->get();
 //         return response()->json($users);
 //     }
 // }
-
-// In your React component file
 
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
