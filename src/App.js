@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import List from './components/list';
 import Update from './components/Update';
 import Show from './components/show';
+import Crud from './components/crude';
 function App() {
   return (
 
@@ -14,6 +15,7 @@ function App() {
         <Route path="/list" element={<List />} />
         <Route path="/update/:id" element={<Update />} />
         <Route path="/show/:id" element={<Show />} />
+        <Route path="/crud" element={<Crud />} />
 
       </Routes>
 
